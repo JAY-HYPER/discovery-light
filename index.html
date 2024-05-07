@@ -1,0 +1,122 @@
+<!--
+
+Hit RUN to see this project in action!
+
+This project will auto-refresh as you edit the HTML and CSS.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>컬러시뮬레이터-디스커버리라이트</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>디스커버리라이트</h2>
+  <div class="product">
+    <img class="main" src="https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-chr.png">
+    <img class="sideColor" src="https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-red.png">
+    <img class="logo" src="https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-wht.png">
+  </div>
+
+  <div class="btn">
+    <h2>메인컬러</h2>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-blk.png')">블랙</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-chr.png')">차콜</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-nvy.png')">네이비</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-slv.png')">실버</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-red.png')">레드</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-blu.png')">블루</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-org.png')">오렌지</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-sky.png')">하늘</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-yel.png')">노랑</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-mnt.png')">민트</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-olv.png')">올리브</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-pur.png')">퍼플</button>
+    <button
+      onclick="changeImageA('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/main-wht.png')">화이트</button>
+
+
+    <h2>배색</h2>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-blk.png')">블랙</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-chr.png')">차콜</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-nvy.png')">네이비</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-slv.png')">실버</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-red.png')">레드</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-blu.png')">블루</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-org.png')">오렌지</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-sky.png')">하늘</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-yel.png')">노랑</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-mnt.png')">민트</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-olv.png')">올리브</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-pur.png')">퍼플</button>
+    <button
+      onclick="changeImageB('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/side-wht.png')">화이트</button>
+
+
+    <h2>로고</h2>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-wht.png')">화이트</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-gry.png')">그레이</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-blk.png')">블랙</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-yel.png')">옐로우</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-red.png')">레드</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-nvy.png')">네이비</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-aqa.png')">아쿠아</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-vlt.png')">바이올렛</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-org.png')">오렌지</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-hpk.png')">핫핑크</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-ngn.png')">네온그린</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-slv.png')">실버</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-gld.png')">골드</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-rgd.png')">로즈골드</button>
+    <button
+      onclick="changeImageC('https://gi.esmplus.com/mobbyskor/color_simulator/discovery-light/logo-rainbow.png')">레인보우골드</button>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
